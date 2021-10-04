@@ -84,6 +84,5 @@
     ?>
     <br><br><br><br>
     <a href="paginainicio.html"> Volver atras</a>
-    
 </body>
 </html>
