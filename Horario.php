@@ -28,7 +28,6 @@
         case 'Monday':
             echo "El dia de hoy es: ".$dia."<br>";
             echo "Y el horario es:
-            <body>
             <table>
             <tr>
                 <td>Aplicaciones web</td>
