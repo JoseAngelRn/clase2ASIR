@@ -24,6 +24,7 @@
     echo "<h4><u>Ejercicio horario</u></h4>";
     $dia = date("l");
     $hora = date("G");
+    $hora2 = date("G:i");
 
     switch ($dia) {
         case 'Monday':
