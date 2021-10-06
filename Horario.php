@@ -23,10 +23,37 @@
 
     echo "<h4><u>Ejercicio horario</u></h4>";
     $dia = date("l");
+    $hora = date("G");
 
     switch ($dia) {
         case 'Monday':
             echo "El dia de hoy es: ".$dia."<br>";
+            echo "La hora de hoy es: ".$hora."<br>";
+            if ($hora == 8) {
+                echo "Estamos en: Aplicaciones web"."<br>";
+            }
+            elseif ($hora == 9) {
+                echo "Estamos en: Aplicaciones web"."<br>";
+            }
+            elseif ($hora == 10) {
+                echo "Estamos en: Aplicaciones web"."<br>";
+            }
+            elseif ($hora == 11) {
+                echo "Estamos en el recreo"."<br>";
+            }
+            elseif ($hora == 12) {
+                echo "Estamos en: Servcios en red"."<br>";
+            }
+            elseif ($hora == 13) {
+                echo "Estamos en: Servcios en red"."<br>";
+            }
+            elseif ($hora == 14) {
+                echo "Estamos en: Servcios en red"."<br>";
+            }
+            else {
+                echo "Estamos en casa"."<br>";
+            }
+
             echo "Y el horario es:
             <table>
             <tr>
@@ -39,7 +66,7 @@
                 <td>Aplicaciones web</td>
             </tr>
             <tr>
-                <td>Servios en red</td>
+                <td>Servcios en red</td>
             </tr>
             <tr>
                 <td>Servicios en red</td>
@@ -52,6 +79,32 @@
 
         case 'Tuesday':
             echo "El dia de hoy es: ".$dia."<br>";
+            echo "La hora de hoy es: ".$hora."<br>";
+            if ($hora == 8) {
+                echo "Estamos en: Administracion de S.O"."<br>";
+            }
+            elseif ($hora == 9) {
+                echo "Estamos en: Administracion de S.O"."<br>";
+            }
+            elseif ($hora == 10) {
+                echo "Estamos en: Administracion de S.O"."<br>";
+            }
+            elseif ($hora == 11) {
+                echo "Estamos en el recreo"."<br>";
+            }
+            elseif ($hora == 12) {
+                echo "Estamos en: Seguridad informatica"."<br>";
+            }
+            elseif ($hora == 13) {
+                echo "Estamos en: Empresas"."<br>";
+            }
+            elseif ($hora == 14) {
+                echo "Estamos en: Empresas"."<br>";
+            }
+            else {
+                echo "Estamos en casa"."<br>";
+            }
+
             echo "Y el horario es:  
             <table>
             <tr>
@@ -77,6 +130,32 @@
 
         case 'Wednesday':
             echo "El dia de hoy es: ".$dia."<br>";
+            echo "La hora de hoy es: ".$hora."<br>";
+            if ($hora == 8) {
+                echo "Estamos en: Administracion de S.O"."<br>";
+            }
+            elseif ($hora == 9) {
+                echo "Estamos en: Administracion de S.O"."<br>";
+            }
+            elseif ($hora == 10) {
+                echo "Estamos en: Administracion de S.O"."<br>";
+            }
+            elseif ($hora == 11) {
+                echo "Estamos en el recreo"."<br>";
+            }
+            elseif ($hora == 12) {
+                echo "Estamos en: Servicios en red"."<br>";
+            }
+            elseif ($hora == 13) {
+                echo "Estamos en: Servicios en red"."<br>";
+            }
+            elseif ($hora == 14) {
+                echo "Estamos en: Servicios en red"."<br>";
+            }
+            else {
+                echo "Estamos en casa"."<br>";
+            }
+
             echo "Y el horario es: 
             <table>
             <tr>
@@ -102,6 +181,32 @@
 
         case 'Thursday':
             echo "El dia de hoy es: ".$dia."<br>";
+            echo "La hora de hoy es: ".$hora."<br>";
+            if ($hora == 8) {
+                echo "Estamos en: Base de datos"."<br>";
+            }
+            elseif ($hora == 9) {
+                echo "Estamos en: Base de datos"."<br>";
+            }
+            elseif ($hora == 10) {
+                echo "Estamos en: Base de datos"."<br>";
+            }
+            elseif ($hora == 11) {
+                echo "Estamos en el recreo"."<br>";
+            }
+            elseif ($hora == 12) {
+                echo "Estamos en: Seguridad informatica"."<br>";
+            }
+            elseif ($hora == 13) {
+                echo "Estamos en: Ingles"."<br>";
+            }
+            elseif ($hora == 14) {
+                echo "Estamos en: Ingles"."<br>";
+            }
+            else {
+                echo "Estamos en casa"."<br>";
+            }
+
             echo "Y el horario es:  
             <table>
             <tr>
@@ -127,6 +232,32 @@
 
         case 'Friday':
             echo "El dia de hoy es: ".$dia."<br>";
+            echo "La hora de hoy es: ".$hora."<br>";
+            if ($hora == 8) {
+                echo "Estamos en: Ingles"."<br>";
+            }
+            elseif ($hora == 9) {
+                echo "Estamos en: Seguridad informatica"."<br>";
+            }
+            elseif ($hora == 10) {
+                echo "Estamos en: Seguridad informatica"."<br>";
+            }
+            elseif ($hora == 11) {
+                echo "Estamos en el recreo"."<br>";
+            }
+            elseif ($hora == 12) {
+                echo "Estamos en: Aplicaciones web"."<br>";
+            }
+            elseif ($hora == 13) {
+                echo "Estamos en: Empresas"."<br>";
+            }
+            elseif ($hora == 14) {
+                echo "Estamos en: Empresas"."<br>";
+            }
+            else {
+                echo "Estamos en casa"."<br>";
+            }
+
             echo "Y el horario es:  
             <table>
             <tr>
@@ -152,6 +283,7 @@
 
         default:
         echo "El dia de hoy es: ".$dia."<br>";
+        echo "La hora de hoy es: ".$hora."<br>";
             break;
     }
     ?>
