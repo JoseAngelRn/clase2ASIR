@@ -10,11 +10,11 @@
             table,
             th,
             td {
-            border: 5px solid lightseagreen;
-            width: auto;
-            border-collapse: collapse;
-            background: lightgoldenrodyellow;
-            color: black;
+                border: 5px solid lightseagreen;
+                width: auto;
+                border-collapse: collapse;
+                background: lightgoldenrodyellow;
+                color: black;
             }
             </style>
 </head>
@@ -29,7 +29,7 @@
     switch ($dia) {
         case 'Monday':
             echo "El dia de hoy es: ".$dia."<br>";
-            echo "La hora de hoy es: ".$hora."<br>";
+            echo "La hora de hoy es: ".$hora2."<br>";
             if ($hora == 8) {
                 echo "Estamos en: Aplicaciones web"."<br>";
             }
@@ -80,7 +80,7 @@
 
         case 'Tuesday':
             echo "El dia de hoy es: ".$dia."<br>";
-            echo "La hora de hoy es: ".$hora."<br>";
+            echo "La hora de hoy es: ".$hora2."<br>";
             if ($hora == 8) {
                 echo "Estamos en: Administracion de S.O"."<br>";
             }
@@ -131,7 +131,7 @@
 
         case 'Wednesday':
             echo "El dia de hoy es: ".$dia."<br>";
-            echo "La hora de hoy es: ".$hora."<br>";
+            echo "La hora de hoy es: ".$hora2."<br>";
             if ($hora == 8) {
                 echo "Estamos en: Administracion de S.O"."<br>";
             }
@@ -182,7 +182,7 @@
 
         case 'Thursday':
             echo "El dia de hoy es: ".$dia."<br>";
-            echo "La hora de hoy es: ".$hora."<br>";
+            echo "La hora de hoy es: ".$hora2."<br>";
             if ($hora == 8) {
                 echo "Estamos en: Base de datos"."<br>";
             }
@@ -233,7 +233,7 @@
 
         case 'Friday':
             echo "El dia de hoy es: ".$dia."<br>";
-            echo "La hora de hoy es: ".$hora."<br>";
+            echo "La hora de hoy es: ".$hora2."<br>";
             if ($hora == 8) {
                 echo "Estamos en: Ingles"."<br>";
             }
@@ -284,7 +284,7 @@
 
         default:
         echo "El dia de hoy es: ".$dia."<br>";
-        echo "La hora de hoy es: ".$hora."<br>";
+        echo "La hora de hoy es: ".$hora2."<br>";
             break;
     }
     ?>
