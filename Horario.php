@@ -24,7 +24,7 @@
                 color: darkblue;
             }
             #boton{
-                border: 3px solid darkmagenta;
+                border: 3px solid darkorchid;
                 width: auto;
                 border-collapse: collapse;
                 background: lightpink;
