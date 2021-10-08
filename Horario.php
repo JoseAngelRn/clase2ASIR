@@ -18,9 +18,17 @@
             }
             h4 {
                 color: darkred;
+                font-size: 150%;
             }
             strong{
                 color: darkblue;
+            }
+            #boton{
+                border: 3px solid darkmagenta;
+                width: auto;
+                border-collapse: collapse;
+                background: lightpink;
+                color: black;
             }
             </style>
 </head>
@@ -294,6 +302,12 @@
             break;
     }
     ?>
-     <a href="paginainicio.html"> Volver atras</a>
+    <table id="boton">
+        <tr id="boton">
+            <td id="boton">
+                <a href="paginainicio.html"> Volver atras</a>
+            </td> 
+        </tr>
+    </table>
 </body>
 </html>
