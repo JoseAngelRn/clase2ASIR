@@ -16,6 +16,12 @@
                 background: lightgoldenrodyellow;
                 color: black;
             }
+            h4 {
+                color: darkred;
+            }
+            strong{
+                color: darkblue;
+            }
             </style>
 </head>
 <body>
