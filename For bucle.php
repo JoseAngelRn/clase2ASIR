@@ -34,6 +34,7 @@
     persona("Manulen", 91);
     persona("Manulin", 27);
     persona("Manule", 45);
+
     
     echo "<br>"."<br>";
 #EJEMPLO DE ARRAYS
@@ -42,6 +43,21 @@
     $selecAleatorio = rand (0 , 5);
 
     echo "El alumno es: ".$alumnos[$selecAleatorio];
+    echo "<br>"."<br>";
+    #FUNCION PRESENTATE
+    presenta("Manule","Café","Tostada");
+
+    function presenta ($nombre, $apellidos, $localidad){
+        echo "Mi nombre es ".$nombre ." ".$apellidos . " y soy de ".$localidad."<br>";
+    }
+
+    function suma($num1,$num2){
+    $res = $num1 + $num2;
+        print "El resultado es: ".$res."</br>";
+    }
+
+    suma(3,2);
+
     ?>
 </body>
 </html>
