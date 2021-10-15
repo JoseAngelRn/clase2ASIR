@@ -36,13 +36,12 @@
     persona("Manule", 45);
     
     echo "<br>"."<br>";
-#EJEMPLO DE ARRAY
+#EJEMPLO DE ARRAYS
     $alumnos = array("Inachio","Paaaco","Mígue","ADAM","Manule","Ívam");
         echo "Hay ".count($alumnos)." alumnos"."<br>";
     $selecAleatorio = rand (0 , 5);
 
     echo "El alumno es: ".$alumnos[$selecAleatorio];
-
     ?>
 </body>
 </html>

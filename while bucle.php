@@ -13,7 +13,7 @@
     $numero = 0;
     
     while ($numero <= 10) {
-        #Paso 1: mostrar mi número
+        #Paso 1: Mostrar mi número
         echo "Mi número es: ".$numero."<br>";
         #Paso 2: Actualizar la variable número
         $numero++;
