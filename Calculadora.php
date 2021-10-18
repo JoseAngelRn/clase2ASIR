@@ -27,23 +27,23 @@
         </style>
 </head>
 <body>
-    <form>
+    <form method= "POST">
         <fieldset>
         <legend><h2>Calculadora</h2></legend>
                 <label><strong>Número 1</strong></label>
                     <input name="Numero1" type="text" value=""></br>
                 <label><strong>Número 2</strong></label>
-                    <input name="Número2" type="text" value="">
+                    <input name="Numero2" type="text" value="">
                 </br></br>
-                    <button name="" type="button">+</button>
-                    <button name="" type="button">-</button>
-                    <button name="" type="button">x</button>
-                    <button name="" type="button">/</button>
-                    <button name="" type="button">%</button>
-                    <button name="" type="button">√</button>
-                    <button name="" type="button">x²</button>
-                    <button name="" type="button">x³</button>
-                    <button name="" type="button">xⁿ</button>
+                    <button name="suma" type="button">+</button>
+                    <button name="resta" type="button">-</button>
+                    <button name="multiplicacion" type="button">x</button>
+                    <button name="division" type="button">/</button>
+                    <button name="modulo" type="button">%</button>
+                    <button name="raiz_cuadrada" type="button">√</button>
+                    <button name="elevado_cuadrado" type="button">x²</button>
+                    <button name="elevado_cubo" type="button">x³</button>
+                    <button name="elevado_cualquier" type="button">xⁿ</button>
 
                 </br></br></br>
                     <input name="" type="submit" value="Resolver">
@@ -53,6 +53,21 @@
 <h3>Resultado:</h3>
 <a href="paginainicio.html"><input name="" type="button" value="Página inicio"></a><br>
 <?php
+
+#VARIABLES METODO POST
+$variableNumero1 = $_POST["Numero1"];
+$variableNumero2 = $_POST["Numero2"];
+#$variableSuma = $_POST["suma"];
+#$variableResta = $_POST["resta"];
+#$variableMultiplicacion = $_POST["multiplicacion"];
+#$variableDivision = $_POST["division"];
+#$variableModulo = $_POST["modulo"];
+#$variableRaiz_cuadrada = $_POST["raiz_cuadrada"];
+#$variableElevado_cuadrado = $_POST["elevado_cuadrado"];
+#$variableElevado_cubo = $_POST["elevado_cubo"];
+#$variableElevado_cualquier = $_POST["elevado_cualquier"];
+
+
 #FUNCIÓN SUMA
 function suma($num1,$num2){
     $res = $num1 + $num2;
