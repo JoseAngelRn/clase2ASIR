@@ -81,9 +81,9 @@ function modulo($num1,$num2){
     }
 
 #VARIABLES METODO POST
-$variableNumero1 = $_POST["Numero1"];
-$variableNumero2 = $_POST["Numero2"];
-$slector = $_POST["operador"];
+$num1 = $_POST["Numero1"];
+$num2 = $_POST["Numero2"];
+$selector = $_POST["operador"];
 
 
 #REALIZACIÓN DE VARIABLES
