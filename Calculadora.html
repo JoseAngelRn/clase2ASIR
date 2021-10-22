@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        h2 {
+            color: rgb(16, 138, 0);
+            font-size: 150%;
+        }
+        h3 {
+            color: rgb(153, 82, 0);
+            font-size: 150%;
+        }
+        strong{
+            color: darkslategray;
+        }
+        fieldset{
+            border-style: solid;
+            border-width: 4px;
+            border-color: lightcoral;
+            background-color: lightyellow;
+            width:500px;
+        }
+        </style>
+</head>
+<body>
+    <form method= "POST" target= "_blank" action="Calculadora.php">
+        <fieldset>
+        <legend><h2>Calculadora</h2></legend>
+                <label><strong>Número 1</strong></label>
+                    <input name="Numero1" type="text" value=""></br>
+                <label><strong>Número 2</strong></label>
+                    <input name="Numero2" type="text" value="">
+                </br></br>
+                    <button name="operador" value="+" type="button">+</button>
+                    <button name="operador" value="-" type="button">-</button>
+                    <button name="operador" value="x" type="button">x</button>
+                    <button name="operador" value="/" type="button">/</button>
+                    <button name="operador" value="%" type="button">%</button>
+                    <button name="operador" value="√" type="button">√</button>
+                    <button name="operador" value="x²" type="button">x²</button>
+                    <button name="operador" value="x³" type="button">x³</button>
+                    <button name="operador" value="xⁿ" type="button">xⁿ</button>
+
+                </br></br></br>
+                    <input name="" type="submit" value="Resolver">
+                </fieldset>
+        </form>
+        <h3>Resultado:</h3>
+<a href="paginainicio.html"><input name="" type="button" value="Página inicio"></a><br>
+</body>
+</html>

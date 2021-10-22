@@ -1,62 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-    <style>
-        h2 {
-            color: rgb(16, 138, 0);
-            font-size: 150%;
-        }
-        h3 {
-            color: rgb(153, 82, 0);
-            font-size: 150%;
-        }
-        strong{
-            color: darkslategray;
-        }
-        fieldset{
-            border-style: solid;
-            border-width: 4px;
-            border-color: lightcoral;
-            background-color: lightyellow;
-            width:500px;
-        }
-        </style>
-</head>
-<body>
-    <form method= "POST">
-        <fieldset>
-        <legend><h2>Calculadora</h2></legend>
-                <label><strong>Número 1</strong></label>
-                    <input name="Numero1" type="text" value=""></br>
-                <label><strong>Número 2</strong></label>
-                    <input name="Numero2" type="text" value="">
-                </br></br>
-                    <button name="suma" type="button">+</button>
-                    <button name="resta" type="button">-</button>
-                    <button name="multiplicacion" type="button">x</button>
-                    <button name="division" type="button">/</button>
-                    <button name="modulo" type="button">%</button>
-                    <button name="raiz_cuadrada" type="button">√</button>
-                    <button name="elevado_cuadrado" type="button">x²</button>
-                    <button name="elevado_cubo" type="button">x³</button>
-                    <button name="elevado_cualquier" type="button">xⁿ</button>
-
-                </br></br></br>
-                    <input name="" type="submit" value="Resolver">
-                </fieldset>
-        </form>
-<br>
-<h3>Resultado:</h3>
-<a href="paginainicio.html"><input name="" type="button" value="Página inicio"></a><br>
 <?php
 
-#VARIABLES METODO POST
-$variableNumero1 = $_POST["Numero1"];
-$variableNumero2 = $_POST["Numero2"];
 #$variableSuma = $_POST["suma"];
 #$variableResta = $_POST["resta"];
 #$variableMultiplicacion = $_POST["multiplicacion"];
@@ -66,7 +9,6 @@ $variableNumero2 = $_POST["Numero2"];
 #$variableElevado_cuadrado = $_POST["elevado_cuadrado"];
 #$variableElevado_cubo = $_POST["elevado_cubo"];
 #$variableElevado_cualquier = $_POST["elevado_cualquier"];
-
 
 #FUNCIÓN SUMA
 function suma($num1,$num2){
@@ -137,7 +79,40 @@ function modulo($num1,$num2){
         $contador ++;
         }
     }
-    
+
+#VARIABLES METODO POST
+$variableNumero1 = $_POST["Numero1"];
+$variableNumero2 = $_POST["Numero2"];
+$slector = $_POST["operador"];
+
+
+#REALIZACIÓN DE VARIABLES
+switch ($selector) {
+    case '+':
+        suma($Num1, $num2);
+        break;
+
+    case '-':
+        resta($Num1, $num2);
+        break;
+
+    case 'x':
+        multiplicacion($Num1, $num2);
+        break;
+
+    case '/':
+        division($Num1, $num2);
+        break;
+
+    case '%':
+        modulo($Num1, $num2);
+        break;
+
+    default:
+        break;
+}
+
+
 #PRUEBAS
 #$prueba1=10;
 #$prueba2=2;
@@ -153,5 +128,3 @@ function modulo($num1,$num2){
 #elevar_exponente($prueba1,$prueba2);
 #fibonacci($prueba3);
 ?>
-</body>
-</html>
