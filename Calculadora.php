@@ -84,7 +84,8 @@ function modulo($num1,$num2){
 $num1 = $_POST["Numero1"];
 $num2 = $_POST["Numero2"];
 $selector = $_POST["operacion"];
-
+$base = $num1;
+$exp = $num2;
 
 #REALIZACIÓN DE VARIABLES
 switch ($selector) {
