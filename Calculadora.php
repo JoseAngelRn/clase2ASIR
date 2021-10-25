@@ -71,11 +71,11 @@ function modulo($num1,$num2){
         $num2 = 1;
         $num3 = 0;
 
-    while ($contador <= $final) {
+    while ($contador < $final) {
+        print " ".$num1;
         $num3 = $num1 + $num2;
         $num1 = $num2;
         $num2 = $num3;
-        echo "El resultado es: ".$num3."</br>";
         $contador ++;
         }
     }
