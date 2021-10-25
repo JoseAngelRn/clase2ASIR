@@ -107,7 +107,18 @@ switch ($selector) {
     case 'modulo':
         modulo($num1, $num2);
         break;
+    case 'raiz_cuadrada':
 
+        break;
+    case 'elevar_cuadrado':
+
+        break;
+    case 'elevar_cubo':
+
+        break;
+    case 'elevar_exponente':
+
+        break;
     default:
         break;
 }
