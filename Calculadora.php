@@ -86,6 +86,7 @@ $num2 = $_POST["Numero2"];
 $selector = $_POST["operacion"];
 $base = $num1;
 $exp = $num2;
+$final = $num1;
 
 #REALIZACIÓN DE VARIABLES
 switch ($selector) {
@@ -119,6 +120,9 @@ switch ($selector) {
         break;
     case 'elevar_exponente':
         elevar_exponente($base,$exp);
+        break;
+    case 'fibonacci':
+        fibonacci($final);
         break;
     default:
         break;
