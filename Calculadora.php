@@ -125,6 +125,7 @@ switch ($selector) {
         fibonacci($final);
         break;
     default:
+    echo "Elija un tipo de operación";
         break;
 }
 
