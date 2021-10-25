@@ -66,7 +66,7 @@ function modulo($num1,$num2){
 
 #FUNCÓN FIBONACCI
     function fibonacci($final){
-        $contador = 1;
+        $contador = 0;
         $num1 = 0;
         $num2 = 1;
         $num3 = 0;
