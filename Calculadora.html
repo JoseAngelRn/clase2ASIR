@@ -24,6 +24,12 @@
             background-color: lightyellow;
             width:500px;
         }
+        #num{
+            width:10%;
+        }
+        select{
+            width:40%;
+        }
         </style>
 </head>
 <body>
@@ -31,10 +37,11 @@
         <fieldset>
         <legend><h2>Calculadora</h2></legend>
                 <label><strong>Número 1</strong></label>
-                    <input name="Numero1" type="text" value=""></br>
+                    <input id = "num" name="Numero1" type="text" value=""></br>
                 <label><strong>Número 2</strong></label>
-                    <input name="Numero2" type="text" value="">
+                    <input id = "num" name="Numero2" type="text" value="">
                 </br></br>
+                <label><strong>Selección</strong></label>
                 <select name="operacion">
                     <option value="suma">Suma</option>
                     <option value="resta">Resta</option>

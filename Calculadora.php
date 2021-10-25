@@ -41,20 +41,20 @@ function modulo($num1,$num2){
     }
 
 #FUNCIÓN RAÍZ CUADRADA
-    function raiz_cuadrada($num){
-        $res = sqrt($num);
+    function raiz_cuadrada($num1){
+        $res = sqrt($num1);
             print "El resultado es: ".$res."</br>";
         }
 
 #FUNCIÓN ELEVAR AL CUADRADO
-    function elevar_cuadrado($num){
-        $res = $num * $num;
+    function elevar_cuadrado($num1){
+        $res = $num1 * $num1;
             print "El resultado es: ".$res."</br>";
         }
 
 #FUNCIÓN ELEVAR AL CUBO
-    function elevar_cubo($num){
-        $res = $num * $num * $num;
+    function elevar_cubo($num1){
+        $res = $num1 * $num1 * $num1;
             print "El resultado es: ".$res."</br>";
         }
 
@@ -80,7 +80,7 @@ function modulo($num1,$num2){
         }
     }
 
-#VARIABLES METODO POST
+#RECOGIDA DE DATOS
 $num1 = $_POST["Numero1"];
 $num2 = $_POST["Numero2"];
 $selector = $_POST["operacion"];
@@ -103,21 +103,21 @@ switch ($selector) {
     case 'division':
         division($num1, $num2);
         break;
-
     case 'modulo':
         modulo($num1, $num2);
         break;
-    case 'raiz_cuadrada':
 
+    case 'raiz_cuadrada':
+        raiz_cuadrada($num1);
         break;
     case 'elevar_cuadrado':
-
+        elevar_cuadrado($num1);
         break;
     case 'elevar_cubo':
-
+        elevar_cubo($num1);
         break;
     case 'elevar_exponente':
-
+        elevar_exponente($base,$exp);
         break;
     default:
         break;
