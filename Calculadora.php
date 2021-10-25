@@ -1,15 +1,4 @@
 <?php
-
-#$variableSuma = $_POST["suma"];
-#$variableResta = $_POST["resta"];
-#$variableMultiplicacion = $_POST["multiplicacion"];
-#$variableDivision = $_POST["division"];
-#$variableModulo = $_POST["modulo"];
-#$variableRaiz_cuadrada = $_POST["raiz_cuadrada"];
-#$variableElevado_cuadrado = $_POST["elevado_cuadrado"];
-#$variableElevado_cubo = $_POST["elevado_cubo"];
-#$variableElevado_cualquier = $_POST["elevado_cualquier"];
-
 #FUNCIÓN SUMA
 function suma($num1,$num2){
     $res = $num1 + $num2;
