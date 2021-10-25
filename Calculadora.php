@@ -58,7 +58,7 @@ function modulo($num1,$num2){
             print "El resultado es: ".$res."</br>";
         }
 
-#UNCIÓN ELEVAR A CUALQUIER EXPONENTE
+#FUNCIÓN ELEVAR A CUALQUIER EXPONENTE
         function elevar_exponente($base,$exp){
             $res = pow($base , $exp); 
             print "El resultado es: ".$res."</br>";
@@ -83,29 +83,29 @@ function modulo($num1,$num2){
 #VARIABLES METODO POST
 $num1 = $_POST["Numero1"];
 $num2 = $_POST["Numero2"];
-$selector = $_POST["operador"];
+$selector = $_POST["operacion"];
 
 
 #REALIZACIÓN DE VARIABLES
 switch ($selector) {
-    case '+':
-        suma($Num1, $num2);
+    case 'suma':
+        suma($num1, $num2);
         break;
 
-    case '-':
-        resta($Num1, $num2);
+    case 'resta':
+        resta($num1, $num2);
         break;
 
-    case 'x':
-        multiplicacion($Num1, $num2);
+    case 'multiplicacion':
+        multiplicacion($num1, $num2);
         break;
 
-    case '/':
-        division($Num1, $num2);
+    case 'division':
+        division($num1, $num2);
         break;
 
-    case '%':
-        modulo($Num1, $num2);
+    case 'modulo':
+        modulo($num1, $num2);
         break;
 
     default:
