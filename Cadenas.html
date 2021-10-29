@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio cadenas</title>
+    <style>
+        h2 {
+            color: lightcoral;
+            font-size: 150%;
+        }
+        h3 {
+            color: rgb(153, 82, 0);
+            font-size: 150%;
+        }
+        strong{
+            color: darkslategray;
+        }
+        fieldset{
+            border-style: solid;
+            border-width: 4px;
+            border-color: lightcoral;
+            background-color: rgb(227, 230, 233);
+            width:50%;
+        }
+        #text{
+            width:20%;
+        }
+        select{
+            width:35%;
+        }
+        </style>
+</head>
+<body>
+    
+    <form method= "POST" target= "_blank" action="Calculadora.php">
+        <fieldset>
+        <legend><h2>Ejercicio de cadenas</h2></legend>
+                <label><strong>texto 1</strong></label>
+                    <input id = "text" name="texto1" type="text" placeholder="Introduzca texto" required>
+                <label><strong>texto 2</strong></label>
+                    <input id = "text" name="texto2" type="text" placeholder="Introduzca texto" required>
+                    <label><strong>texto 3</strong></label>
+                    <input id = "text" name="texto3" type="text" placeholder="Introduzca texto" required>
+                <br>
+                <label><strong>Selección</strong></label>
+                <select name="operacion">
+                    <option value="">-Selecciona una opción-</option>
+                    <option value="cuentac">Cuenta carácteres</option>
+                    <option value="cuentap">Cuenta palabras</option>
+                    <option value="invierte">Invierte el texto</option>
+                    <option value="busqueda">Búsqueda</option>
+                    <option value="reemplazar">Reemplazar palabra</option>
+                </select>
+                </br></br></br>
+                    <input name="" type="reset" value="Borrar">
+                    <input name="" type="submit" value="Enviar consulta">
+                </fieldset>
+        </form>
+    </br>
+<a href="paginainicio.html"><input name="" type="button" value="Página inicio"></a><br>
+
+
+
+</body>
+</html>
