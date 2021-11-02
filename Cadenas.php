@@ -25,12 +25,12 @@ function invierte($text1){
 #FUNCIÓN BUSQUEDA
 function busqueda($text1,$text2){
     $res = strpos($text1,$text2);
-        print "".$res."</br>";
+        print "La palabra está en la posición: ".$res."</br>";
 }
 #FUNCIÓN REEMPLAZAR
 function reemplazar($text1,$text2,$text3){
     $res = str_replace($text1,$text2,$text3);
-        print "Palabra reemplazada".$res."</br>";
+        print "Palabra reemplazada: ".$res."</br>";
 }
 
 switch ($selector) {
