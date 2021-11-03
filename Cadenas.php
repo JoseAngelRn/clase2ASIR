@@ -28,9 +28,9 @@ function busqueda($text1,$text2){
         print "La palabra está en la posición: ".$res."</br>";
 }
 #FUNCIÓN REEMPLAZAR
-function reemplazar($text1,$text2,$text3){
-    $res = str_replace($text1,$text2,$text3);
-        print "el nuevo texto es: ".$res."</br>";
+function reemplazar($text3,$text2,$text1){
+    $res = str_replace($text3,$text2,$text1);
+        print "El nuevo texto es: ".$res."</br>";
 }
 
 switch ($selector) {
@@ -48,7 +48,7 @@ switch ($selector) {
         busqueda($text1,$text2);
         break;
     case 'reemplazar':
-        reemplazar($text1,$text2,$text3);
+        reemplazar($text3,$text2,$text1);
         break;
     default:
     echo "Elija otra selección";
