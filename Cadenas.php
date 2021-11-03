@@ -30,7 +30,7 @@ function busqueda($text1,$text2){
 #FUNCIÓN REEMPLAZAR
 function reemplazar($text1,$text2,$text3){
     $res = str_replace($text1,$text2,$text3);
-        print "Palabra reemplazada: ".$res."</br>";
+        print "el nuevo texto es: ".$res."</br>";
 }
 
 switch ($selector) {
