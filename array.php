@@ -1,5 +1,6 @@
 <?php
 
+#ARRAY NORMALES
 $numeros = array(8, 3, 7, 1);
 
 $suspensos = array("Migue", "Kerry");
@@ -33,5 +34,8 @@ $cochesordenados = sort($coches);
 echo "Coches ordcenados: ".$coches[$cochesordenados]."</br>";
 
 
+#ARRAY ASOCIATIVOS
+$alumno = array("Nombre" =>"Migue", "Apellidos" => "Kerry", "Edad" => 25, "EstaAprobado" => false);
+echo "El alumno es: ".$alumno["Nombre"]." ".$alumno["Apellidos"]." ".$alumno["Edad"];
 
 ?>
