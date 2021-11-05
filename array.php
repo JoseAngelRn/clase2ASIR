@@ -19,6 +19,7 @@ echo "Números de coches: ".$cuentacoches."</br>";
 $aleatorio = rand(0, $cuentacoches-1);
 echo "Coche aleatorio: ".$coches[$aleatorio]."</br>";
 
+#QUE ME DE 3 COCHES ALEATORIAMENTE
 $parada = 0;
 
 while ($parada < 3) {
@@ -26,6 +27,11 @@ while ($parada < 3) {
     echo $coches[$aleatorio]."</br>";
     $parada++;
 }
+
+#ORDENAR COCHES
+$cochesordenados = sort($coches);
+echo "Coches ordcenados: ".$coches[$cochesordenados]."</br>";
+
 
 
 ?>
