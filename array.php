@@ -20,6 +20,53 @@ for ($varexterior = 0; $varexterior < 5; $varexterior++){
         }
 }
 
+#ARRAYS ESTÁNDAR
+print "<br><h3>ARRAY 'ESTÁNDAR'</h3>"."</br>";
+
+    #Forma 1
+$numerosP = array(2,4,6,8,10);
+print_r($numerosP);
+print "</br>";
+
+print "Muestro lo que hay en la posición 3: ".$numerosP[3]."</br>";
+print "</br>";
+
+    #El count lo hacemos para saber cuantos números hay
+$cuentaNumerosP = count($numerosP);
+print "Valor de cuenta ARRAY: ".$cuentaNumerosP."</br>";
+
+    #para no mostar los valor uno a uno usamos el for
+for ($i=0; $i < $cuentaNumerosP; $i++) { 
+    print "Muestro lo que hay en la posición ".$i.": ".$numerosP[$i]."</br>";
+}
+print "</br>";
+
+    #Forma 2
+$numerosI = [1,3,5,7,9];
+print_r($numerosI);
+print "</br>";
+
+
+#ARRAYS ASOCIATIVOS
+print "<br><h3>ARRAY 'ASOCIATIVOS'</h3>"."</br>";
+
+$potencias2 = array(1=>2, 2=>4, 3=>8);
+$capitales = ["Andalucia"=>"Sevilla", "Madrid"=>"Madrid", "Aragón"=>"Zaragoza","Baleares"=>"Palma de Mayorca"];
+print_r($potencias2);
+print "</br>";
+print_r($capitales);
+print "</br>";
+
+    #Añadir elementos a un arrray
+
+$capitales["Cataluña"]="Barcelona";
+print_r($capitales);
+print "</br>";
+
+$capitales["Andalucia"]="Almeria";
+print_r($capitales);
+print "</br>";
+
 
 /*
 #ARRAY NORMALES
