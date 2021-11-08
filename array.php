@@ -103,6 +103,13 @@ print "</br>";
 unset($coches3[1]);
 print_r($coches3);
 print "</br>";
+print "</br>";
+
+#Copiar matrices
+$copiaCapitales= $capitales;
+print_r($copiaCapitales);
+print "</br>";
+
 
 
 /*
