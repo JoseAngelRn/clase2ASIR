@@ -109,8 +109,13 @@ print "</br>";
 $copiaCapitales= $capitales;
 print_r($copiaCapitales);
 print "</br>";
+print "</br>";
 
-
+#copiar matrices y modificar
+$copiaCapitales2= $capitales;
+$copiaCapitales2["Andalucia"]="Córdoba";
+print_r($copiaCapitales2);
+print "</br>";
 
 /*
 #ARRAY NORMALES
