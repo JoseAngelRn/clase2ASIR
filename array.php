@@ -67,6 +67,43 @@ $capitales["Andalucia"]="Almeria";
 print_r($capitales);
 print "</br>";
 
+$cuentaLetras=strlen($capitales["Andalucia"]);
+echo $cuentaLetras."</br>";
+
+$notasAsignaruraMigue=["LM"=>0, "FOL"=>4, "PAR"=>3, "ISO"=>0, "FH"=>0, "BB"=>4];
+print_r($notasAsignaruraMigue);
+print "</br>";
+print "</br>";
+    #Unión de Arrays
+
+$coches1= array("Seat", "Renault", "Dacia");
+$coches2= ["BMW","Audi"];
+print_r($coches1);
+print "</br>";
+print_r($coches2);
+print "</br>";
+
+print "Unicón de arrays";
+print "</br>";
+
+$union1con2= $coches1+$coches2;
+print_r($union1con2);
+print "</br>";
+
+$union2con1= $coches2+$coches1;
+print_r($union2con1);
+print "</br>";
+print "</br>";
+
+    #Borrar un elemento
+$coches3= array("Seat", "Renault", "Dacia", "BMW", "Audi");
+print_r($coches3);
+print "</br>";
+
+unset($coches3[1]);
+print_r($coches3);
+print "</br>";
+
 
 /*
 #ARRAY NORMALES
