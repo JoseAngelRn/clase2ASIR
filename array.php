@@ -126,18 +126,35 @@ echo "</br>";
 
 #Diferencias del primero con el segundo (El más largo primero)
 $resultadoDiferencia= array_diff($colores2,$colores1);
-#Copiar uno con otro
-$resultadoUnion= array_merge($colores2,$colores1);
-#Coge los iguales
-$resultadoIntercepcion= array_intersect($colores2,$colores1);
-
-
 print_r($resultadoDiferencia);
 echo "</br>";
+#Copiar uno con otro
+$resultadoUnion= array_merge($colores2,$colores1);
 print_r($resultadoUnion);
 echo "</br>";
+#Coge los iguales
+$resultadoIntercepcion= array_intersect($colores2,$colores1);
 print_r($resultadoIntercepcion);
 echo "</br>";
+#Añadir valiables
+$colores4= array_push($colores2,"Púrpura","Marrón","Celeste");
+print_r($colores2);
+echo "</br>";
+#Ordenar un array alfabeticamente
+$ordenaArray= sort($colores2);
+print_r($colores2);
+echo "</br>";
+#Ordenar un array alfabeticamente (Al reves)
+$ordenaArrayR= rsort($colores2);
+print_r($colores2);
+echo "</br>";
+
+
+
+
+
+
+;
 
 
 
