@@ -74,7 +74,8 @@ $notasAsignaruraMigue=["LM"=>0, "FOL"=>4, "PAR"=>3, "ISO"=>0, "FH"=>0, "BB"=>4];
 print_r($notasAsignaruraMigue);
 print "</br>";
 print "</br>";
-    #Unión de Arrays
+
+    #Unión/suma de Arrays
 
 $coches1= array("Seat", "Renault", "Dacia");
 $coches2= ["BMW","Audi"];
@@ -116,6 +117,30 @@ $copiaCapitales2= $capitales;
 $copiaCapitales2["Andalucia"]="Córdoba";
 print_r($copiaCapitales2);
 print "</br>";
+
+#Funciones de matrices
+
+$colores1= ["Verde","Azul","Amarillo","Rojo"];
+$colores2= ["Verde","Azul","Amarillo","Rojo","Blanco"];
+echo "</br>";
+
+#Diferencias del primero con el segundo (El más largo primero)
+$resultadoDiferencia= array_diff($colores2,$colores1);
+#Copiar uno con otro
+$resultadoUnion= array_merge($colores2,$colores1);
+#Coge los iguales
+$resultadoIntercepcion= array_intersect($colores2,$colores1);
+
+
+print_r($resultadoDiferencia);
+echo "</br>";
+print_r($resultadoUnion);
+echo "</br>";
+print_r($resultadoIntercepcion);
+echo "</br>";
+
+
+
 
 /*
 #ARRAY NORMALES
