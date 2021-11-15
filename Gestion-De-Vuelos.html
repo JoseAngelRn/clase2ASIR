@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de vuelos</title>
+    <style>
+        h2 {
+            color: lightcoral;
+            font-size: 150%;
+        }
+        h3 {
+            color: rgb(153, 82, 0);
+            font-size: 150%;
+        }
+        strong{
+            color: darkslategray;
+        }
+        fieldset{
+            border-style: solid;
+            border-width: 4px;
+            border-color: lightcoral;
+            background-color: rgb(227, 230, 233);
+            width:70%;
+            float: left;
+        }
+        #field{
+            width:30%;
+        }
+        #field2{
+            width:30%;
+        }
+        select{
+            width:80%;
+        }
+        #boton{
+            float: none;
+        }
+        </style>
+</head>
+<body>
+    <form method= "POST" target= "_blank" action="Gestion-De-Vuelos.php">
+        <fieldset>
+        <legend><h2>Gestión de vuelos</h2></legend>
+        <fieldset id = "field">
+            <legend><h3>Vuelo 1</h3></legend>
+            <label><strong>Código</strong></label></br>
+            <input id = "cod" name="Codigo" type="text" placeholder="0" required></br>
+            <label><strong>Ciudad Origen</strong></label></br>
+            <input id = "ciuo" name="CiudadOrigen" type="text" placeholder="0" required></br>
+            <label><strong>Ciudad destino</strong></label></br>
+            <input id = "ciud" name="CiudadDestino" type="text" placeholder="0" required></br>
+            <label><strong>Precio</strong></label></br>
+            <input id = "pre" name="Precio" type="text" placeholder="0" required></br>
+            <label><strong>Fecha salida</strong></label></br>
+            <input id = "fecs" name="FechaSalida" type="text" placeholder="0" required></br>
+        </fieldset>
+        <fieldset id = "field">
+            <legend><h3>Vuelo 2</h3></legend>
+            <label><strong>Código</strong></label></br>
+            <input id = "cod2" name="Codigo" type="text" placeholder="0" required></br>
+            <label><strong>Ciudad Origen</strong></label></br>
+            <input id = "ciuo2" name="CiudadOrigen" type="text" placeholder="0" required></br>
+            <label><strong>Ciudad destino</strong></label></br>
+            <input id = "ciud2" name="CiudadDestino" type="text" placeholder="0" required></br>
+            <label><strong>Precio</strong></label></br>
+            <input id = "pre2" name="Precio" type="text" placeholder="0" required></br>
+            <label><strong>Fecha salida</strong></label></br>
+            <input id = "fecs2" name="FechaSalida" type="text" placeholder="0" required></br>
+        </fieldset>
+        <fieldset id = "field2">
+            <legend><h3>Herramientas</h3></legend>
+                <label><strong>Selección</strong></label></br>
+                <select name="opciones">
+                    <option value="">---Selecciona una opción---</option>
+                    <option value="Combinar_vuelos">Combinar vuelos</option>
+                    <option value="Diferencias_vuelos">Diferencias entre vuelos</option>
+                    <option value="Ordena_vuelos">ordena vuelos</option>
+                    <option value="Informacion_vuelos">Información común</option>
+                </select>
+            </fieldset>
+            </br></br>
+            <input id = "boton" name="" type="reset" value="Borrar"></br>
+            <input id = "boton" name="" type="submit" value="Resolver"></br>
+        </fieldset>
+        </form>
+        </br>
+<a href="paginainicio.html"><input name="" type="button" value="Página inicio"></a><br>
+</body>
+</html>

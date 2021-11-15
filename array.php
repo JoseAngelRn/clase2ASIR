@@ -128,7 +128,7 @@ echo "</br>";
 $resultadoDiferencia= array_diff($colores2,$colores1);
 print_r($resultadoDiferencia);
 echo "</br>";
-#Copiar uno con otro
+#Copiar uno con otro o unir
 $resultadoUnion= array_merge($colores2,$colores1);
 print_r($resultadoUnion);
 echo "</br>";
