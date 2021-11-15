@@ -21,12 +21,13 @@ function InfoComun($vuelo1,$vuelo2){
 }
 
 #Recogida de variables
-$num1 = $_POST["Numero1"];
-$num2 = $_POST["Numero2"];
+$ = $_POST[""];
+$ = $_POST[""];
 $selector = $_POST["opciones"];
 
-
-
+#ARRAY
+$vuelo1 = array();
+$vuelo2 = array();
 
 
 switch ($selector) {
@@ -44,6 +45,10 @@ switch ($selector) {
 
     case 'InfoComun':
         function InfoComun($vuelo1,$vuelo2);
+        break;
+
+    default:
+        echo "Elija otra opción";
         break;
 
 ?>
