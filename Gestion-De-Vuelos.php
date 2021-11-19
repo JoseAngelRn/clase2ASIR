@@ -33,7 +33,7 @@ function Diferencias($vuelo1,$vuelo2){
 #Ordena vuelos
 function Ordenar($vuelo1,$vuelo2){
     $Combinar_Vuelos2= array_merge($vuelo1,$vuelo2);
-    $Ordena_Vuelos= sort($Combinar_Vuelos2);
+    $Ordena_Vuelos= ksort($Combinar_Vuelos2); #Se pude hacer también $Ordena_Vuelos= sort($Combinar_Vuelos2);
         echo "<b>Datos del vuelo ordenado: </b></br>";
         print_r($Combinar_Vuelos2);
 }
