@@ -29,5 +29,4 @@ switch ($selector) {
     echo "Elija otra selección";
         break;
 }
-
 ?>

@@ -1,5 +1,4 @@
 <?php
-
 #FUNCIÓN CONTAR CARACTERES
 function cuentacaracteres($text1){
     $res = strlen($text1);
@@ -25,6 +24,5 @@ function reemplazar($text3,$text2,$text1){
     $res = str_replace($text3,$text2,$text1);
         print "El nuevo texto es: ".$res."</br>";
 }
-
 
 ?>
