@@ -10,11 +10,11 @@ echo readfile("Pruebaficheros.txt")."<br>";
 echo filesize("Pruebaficheros.txt")."<br>";
 
 #APERTURA, LECTURA Y CIERRE DE UN FICHERO
-$varFopen = fopen("Pruebaficheros.txt","r") or die ("Manule fuiste un fallo al nacer");
-$varpeso = filesize("Pruebaficheros.txt");
+$varFopen = fopen("Pruebaficheros.txt","r") or die ("Manule fuiste un fallo al nacer"); #abrir el recurso
+$varpeso = filesize("Pruebaficheros.txt"); #Meto el peso en una variable
 
-echo fread($varFopen, $varpeso);
-fclose($varFopen);
+echo fread($varFopen, $varpeso); #Leer
+fclose($varFopen); #Cerrar el recurso
 
 
 ?>
