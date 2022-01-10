@@ -45,7 +45,11 @@ $Provincias = array(
 );
 print_r ($Provincias);
 
+echo "<br>";
 
+foreach ($Provincias as $Provincita => $Capitalita) {
+    echo "La comunidad autonoma es: ".$Provincita." y su capital es: " .$Capitalita."<br>";
+}
 
 
 
