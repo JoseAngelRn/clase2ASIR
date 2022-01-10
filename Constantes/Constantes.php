@@ -72,8 +72,22 @@ echo "<br>";
     }
 echo "<br>";
 
+#Arrays multidimencionales
 
+$Asir = array(
+    array("Nombre" => "Inachio", "Frase" => "Gusano morris"),
+    array("Nombre" => "Manule", "Frase" => "Tu padre el muerto"),
+    array("Nombre" => "Kerry", "Frase" => "au au au"),
+    array("Nombre" => "Migue", "Frase" => "k e echo")
+);
 
+print_r ($Asir);
+echo "<br>";
+echo "<br>";
+
+foreach ($Asir as $Alumno) {
+    echo "Frase tipica ".$Alumno["Nombre"].": ".$Alumno["Frase"]."<br>";
+}
 
 
 
