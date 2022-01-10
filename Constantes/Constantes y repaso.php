@@ -113,5 +113,14 @@ function sumar($Numero1, $Numero2){
 $sumador = sumar($Numero1, $Numero2);
  echo $sumador;
  echo "<br>";
+ echo "<br>";
+
+ echo GRAVEDAD;
+
+ echo "<br>";
+
+$Redonadear = round(GRAVEDAD); #Sirve para redondear 
+echo $Redonadear;
+
 
 ?>
