@@ -86,7 +86,7 @@ echo "<br>";
 echo "<br>";
 
 foreach ($Asir as $Alumno) {
-    echo "Frase tipica ".$Alumno["Nombre"].": ".$Alumno["Frase"]."<br>";
+    echo "Frase tipica de ".$Alumno["Nombre"].": ".$Alumno["Frase"]."<br>";
 }
 
 
