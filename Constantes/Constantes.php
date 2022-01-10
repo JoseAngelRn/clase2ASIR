@@ -50,12 +50,27 @@ echo "<br>";
 foreach ($Provincias as $Provincita => $Capitalita) {
     echo "La comunidad autonoma es: ".$Provincita." y su capital es: " .$Capitalita."<br>";
 }
+echo "<br>";
 
+#Añadir valores en arrays normales (Se añade al final)
 
+$Numeros []= 3;
 
+#Modificar un valor del array
+$Numeros [0]= 3;
 
+foreach ($Numeros as $Numerito) {
+    echo $Numerito . "<br>";
+    }
+echo "<br>";
 
+#Eliminar un valor de un array
+ unset ($Numeros[6]);
 
+ foreach ($Numeros as $Numerito) {
+    echo $Numerito . "<br>";
+    }
+echo "<br>";
 
 
 
