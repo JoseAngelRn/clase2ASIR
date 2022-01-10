@@ -88,10 +88,30 @@ echo "<br>";
 foreach ($Asir as $Alumno) {
     echo "Frase tipica de ".$Alumno["Nombre"].": ".$Alumno["Frase"]."<br>";
 }
+echo "<br>";
+
+#Funciones
+$Numero1 = 10;
+$Numero2 = 4;
+
+function suma($Numero1, $Numero2){
+    $res = $Numero1 + $Numero2;
+    echo $res;
+}
+ suma ($Numero1, $Numero2);
+ echo "<br>";
 
 
+ #Funciones con retorno
+$Numero1 = 10;
+$Numero2 = 4;
 
-
-
+function sumar($Numero1, $Numero2){
+    $res = $Numero1 + $Numero2;
+    return $res;
+}
+$sumador = sumar($Numero1, $Numero2);
+ echo $sumador;
+ echo "<br>";
 
 ?>
