@@ -37,10 +37,14 @@ fclose($fichero2);
 
 
 #Saber el peso del archivo
-echo filesize("NuveoArchivo.txt")."<br>"; 
+echo filesize("NuveoArchivo.txt")."<br>";
+$peso_archivo = filesize("NuveoArchivo.txt"); 
 #Leer y mostar el peso del archivo
 echo readfile("NuveoArchivo.txt")."<br>";
 
 
+$archivo = fopen("NuveoArchivo.txt", "a+");
+echo fread($archivo, $peso_archivo);
+fclose($archivo);
 
 ?>
