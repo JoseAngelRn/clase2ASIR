@@ -3,7 +3,7 @@ $Nombre = $_POST["Nombre"];
 $Apellidos = $_POST["Apellidos"];
 $Edad = $_POST["Edad"];
 
-$fichero = fopen("NuevoArchivo.txt","w+");
+$fichero = fopen("NuevoArchivo.txt","a+");
 
 if ($fichero == false) {
     echo "Error no se ha creado el fichero "."<br>";
@@ -15,8 +15,8 @@ if ($fichero == false) {
     fflush($fichero);
 }
 
-
-echo readfile("NuevoArchivo.txt")."<br>";
+$peso_archivo = filesize("NuevoArchivo.txt");
+echo fread($fichero, $peso_archivo);
 fclose($fichero);
 
 ?>
