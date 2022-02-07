@@ -30,10 +30,16 @@ if ($fichero2 == false) {
 } else {
     fwrite($fichero2, "Miguel Romero Perez\r\n");
     fwrite($fichero2, "Manuel Martinez Barranco\r\n");
+    fflush($fichero2); #Vaciar caché, medida de seguridad, recomendable
 }
 #Cerrar el fichero
 fclose($fichero2);
 
+
+#Saber el peso del archivo
+echo filesize("NuveoArchivo.txt")."<br>"; 
+#Leer y mostar el peso del archivo
+echo readfile("NuveoArchivo.txt")."<br>";
 
 
 
