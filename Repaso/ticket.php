@@ -9,9 +9,9 @@ if ($fichero == false) {
     echo "Error no se ha creado el fichero "."<br>";
 } else {
     echo "Se ha creado el fichero correctamente"."<br>";
-    fwrite($fichero, $Nombre);
-    fwrite($fichero, $Apellidos);
-    fwrite($fichero, $Edad);
+    fwrite($fichero, $Nombre."\r\n");
+    fwrite($fichero, $Apellidos."\r\n");
+    fwrite($fichero, $Edad."\r\n");
     fflush($fichero);
 }
 
