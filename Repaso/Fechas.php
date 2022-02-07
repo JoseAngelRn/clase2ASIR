@@ -58,4 +58,7 @@ echo "Faltan: ".$diff_horas." segundos"."<br>";
 echo "Faltan: ".$diff_dias." segundos"."<br>";
 
 
+
+
+
 ?>
